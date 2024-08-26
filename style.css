@@ -76,6 +76,11 @@ button{
     border-bottom-left-radius: 0;
 }
 
+button:hover{
+    background-color: #c6732a;
+    font-weight: bold;
+}
+
 ul li{
     font-size: 15px;
     padding: 12px 8px 12px 4px;
@@ -118,11 +123,11 @@ ul li{
 
 .task-item .fa-trash:hover{
     color: #c27715;
+    cursor: pointer;
 }
 
 .task-item{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 12px 8px;
 }

@@ -3,37 +3,44 @@ const addBtn = document.querySelector("button");
 let taskAdded = document.querySelector("ul li");
 const list = document.querySelector(".list-container");
 
-function addTask(taskAdded){
+function addTask(taskAdded){ 
     const newTask = document.createElement("li");
     newTask.classList.add("task-item");
     newTask.innerHTML = `<i class="fa-regular fa-circle"></i><span class="task-text">${taskAdded}</span><i class="fa-solid fa-trash"></i>`;
-    list.appendChild(newTask);
-    taskName.value = '';
+    list.appendChild(newTask); // add task to list
+    taskName.value = ''; // restart the input box text
 }
 
 // add task
-addBtn.addEventListener("click", function(){
+addBtn.addEventListener("click", function(event){
+    console.log(event);
     taskAdded = taskName.value;
     console.log(taskAdded);
-    addTask(taskAdded);
+    if (!(taskAdded === '')){ // if user did not write anything in the input box, no task will be added
+        addTask(taskAdded);
+    }
 });
 
-// check/uncheck task
 list.addEventListener("click", function (event) {
-    console.log(event);
-
-    // Check if the click was on the circle icon
+    // check/uncheck task
+    // check if the circle icon was clicked
     if (event.target.classList.contains("fa-circle") || event.target.classList.contains("fa-circle-check")) {
-        console.log("Check button clicked!", event.target);
 
-        // Toggle between checked and unchecked icon
+        // toggle between checked and unchecked icon
         event.target.classList.toggle("fa-circle");
         event.target.classList.toggle("fa-circle-check");
 
-        // Get the parent <li> element of the clicked icon
         const taskContent = event.target.parentElement;
-
-        // Toggle the 'checkedTask' class on the <li> element to change text decoration
+        // change text decoration
         taskContent.classList.toggle("checkedTask");
     }
+
+    // delete task
+    // check if the trash icon was clicked
+    if (event.target.classList.contains("fa-trash")) {
+        const taskItem = event.target.parentElement;
+        taskItem.remove(); // remove the task item from the list
+    }
 });
+
+
