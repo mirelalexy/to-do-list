@@ -1,0 +1,43 @@
+{
+    "short_name": "to-do list",
+    "icons": [
+      {
+        "src": "assets/images/icon-small.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/images/icon.png",
+        "type": "image/png",
+        "sizes": "500x500"
+      }
+    ],
+    "start_url": "https://mirelalexy.github.io/to-do-list/",
+    "background_color": "rgb(177,18,187)",
+    "display": "standalone",
+    "theme_color": "rgb(31, 31, 31)",
+    "shortcuts": [
+      {
+        "name": "manage your tasks",
+        "short_name": "to-do list",
+        "description": "add, check, uncheck and delete tasks on your to-do list.",
+        "url": "https://mirelalexy.github.io/to-do-list/index.html",
+        "icons": [{ "src": "assets/images/icon-small.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "add, check, uncheck and delete tasks on your to-do list.",
+    "screenshots": [
+      {
+        "src": "assets/images/narrow.png",
+        "type": "image/png",
+        "sizes": "611x850",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "assets/images/wide.png",
+        "type": "image/png",
+        "sizes": "1253x644",
+        "form_factor": "wide"
+      }
+    ]
+  }

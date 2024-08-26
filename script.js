@@ -49,14 +49,14 @@ list.addEventListener("click", function(event) {
 // toggle theme
 themeBtn.addEventListener("click", function(){
     const trashIcon = document.querySelector(".fa-trash");
-    
+
     // background
     body.classList.toggle("orange-body");
     body.classList.toggle("pink-body");
 
     // orange theme
     if(body.classList.contains("orange-body")) {
-        img.src = "/assets/images/pumpkin.png";
+        img.src = "assets/images/pumpkin.png";
         img.classList.add("pumpkin");
         img.classList.remove("bow");
         addBtn.classList.add("orangeBtn");
@@ -65,7 +65,7 @@ themeBtn.addEventListener("click", function(){
         trashIcon.classList.remove("pinkTrash");
     // pink theme
     } else if (body.classList.contains("pink-body")) {
-        img.src = "/assets/images/bow.png";
+        img.src = "assets/images/bow.png";
         img.classList.add("bow");
         img.classList.remove("pumpkin");
         addBtn.classList.add("pinkBtn");
