@@ -16,9 +16,7 @@ function addTask(taskAdded){
 
 // add task
 addBtn.addEventListener("click", function(event){
-    console.log(event);
     taskAdded = taskName.value;
-    console.log(taskAdded);
     if (!(taskAdded === '')) { // if user did not write anything in the input box, no task will be added
         addTask(taskAdded);
     }
