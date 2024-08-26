@@ -15,10 +15,20 @@
     font-family: poppins-regular;
 }
 
-body{
+.orange-body{
     min-height: 100vh;
     background: #c16d32;
     background: radial-gradient(circle, #c16d32 0%, #edcda0 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.pink-body{
+    min-height: 100vh;
+    background: #ed4ba5;
+    background: radial-gradient(circle, #ed4ba5 0%, #ebbfcc 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,13 +42,20 @@ body{
     top: 8px;
 }
 
+.bow{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 8px;
+}
+
 .main-container{
     background-color: #ffffff;
     width: 100%;
     max-width: 550px;
     padding: 30px;
     border-radius: 10px;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 h1{
@@ -70,17 +87,31 @@ input{
     outline: none;
     padding: 15px 40px;
     cursor: pointer;
-    background-color: #f48e36;
     color: #ffffff;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
 .addTaskBtn:hover{
-    background-color: #c6732a;
     font-weight: bold;
+}
+
+.orangeBtn{
+    background-color: #f48e36;
+}
+
+.orangeBtn:hover{
+    background-color: #c6732a;
+}
+
+.pinkBtn{
+    background-color: #c44963;
+}
+
+.pinkBtn:hover{
+    background-color: #831c41;
 }
 
 ul li{
@@ -124,8 +155,15 @@ ul li{
 }
 
 .task-item .fa-trash:hover{
-    color: #c27715;
     cursor: pointer;
+}
+
+.orangeTrash:hover{
+    color: #c27715;
+}
+
+.pinkTrash:hover{
+    color: #a7276d;
 }
 
 .task-item{
@@ -160,4 +198,47 @@ ul li{
 .toggleThemeBtn:hover{
     background-color: transparent;
     color: #ffffff;
+}
+
+/* small screens */
+@media (max-width: 562px){
+    .main-container{
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 500px;
+    }
+    .row{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: #dedede;
+        padding-left: 10px;
+        margin-bottom: 25px;
+    }
+    input{
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 100px;
+    }
+}
+
+@media (max-width: 518px){
+    .main-container{
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 475px){
+    .main-container{
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 400px;
+    }
 }
