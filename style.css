@@ -17,8 +17,8 @@
 
 body{
     height: 100vh;
-    background: rgb(193,109,50);
-    background: radial-gradient(circle, rgba(193,109,50,1) 0%, rgba(237,205,160,1) 100%);
+    background: #c16d32;
+    background: radial-gradient(circle, #c16d32 0%, #edcda0 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@ body{
 }
 
 .main-container{
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     max-width: 550px;
     padding: 30px;
@@ -69,7 +69,7 @@ button{
     padding: 15px 40px;
     cursor: pointer;
     background-color: #f48e36;
-    color: white;
+    color: #ffffff;
     font-size: 15px;
     border-radius: 10px;
     border-top-left-radius: 0;
@@ -80,11 +80,54 @@ ul li{
     font-size: 15px;
     padding: 12px 8px 12px 4px;
     list-style-type: none;
+    text-decoration: none;
+    user-select: none;
 }
 
 .fa-circle{
+    font-size: 1.2rem;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.fa-circle-check{
+    font-size: 1.2rem;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.checkedTask .task-text{
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.uncheckedTask{
+    text-decoration: none;
+    color: #000000;
+}
+
+.task-item .fa-trash{
     margin-right: 20px;
     font-size: 1.2rem;
     position: relative;
     top: 2px;
+    color: #565656;
+}
+
+.task-item .fa-trash:hover{
+    color: #c27715;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 8px;
+}
+
+.task-text {
+    flex-grow: 1; /* allows the text to take up available space */
+    margin-left: 10px; /* space between checkbox and text */
 }
