@@ -1,13 +1,14 @@
 {
+    "name": "to-do list",
     "short_name": "to-do list",
     "icons": [
       {
-        "src": "assets/images/icon-small.png",
+        "src": "assets/icons/icon-small.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "assets/images/icon.png",
+        "src": "assets/icons/icon.png",
         "type": "image/png",
         "sizes": "500x500"
       }
@@ -18,7 +19,7 @@
     "theme_color": "rgb(31, 31, 31)",
     "shortcuts": [
       {
-        "name": "manage your tasks",
+        "name": "to-do list",
         "short_name": "to-do list",
         "description": "add, check, uncheck and delete tasks on your to-do list.",
         "url": "https://mirelalexy.github.io/to-do-list/index.html",
