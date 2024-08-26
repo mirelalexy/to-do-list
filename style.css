@@ -1,0 +1,90 @@
+@font-face {
+    font-family: poppins-regular;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins-regular;
+}
+
+body{
+    height: 100vh;
+    background: rgb(193,109,50);
+    background: radial-gradient(circle, rgba(193,109,50,1) 0%, rgba(237,205,160,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pumpkin{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 8px;
+}
+
+.main-container{
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: poppins-bold;
+    margin-bottom: 25px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #dedede;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    background-color: #f48e36;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+ul li{
+    font-size: 15px;
+    padding: 12px 8px 12px 4px;
+    list-style-type: none;
+}
+
+.fa-circle{
+    margin-right: 20px;
+    font-size: 1.2rem;
+    position: relative;
+    top: 2px;
+}
