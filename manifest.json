@@ -23,7 +23,7 @@
         "short_name": "to-do list",
         "description": "add, check, uncheck and delete tasks on your to-do list.",
         "url": "https://mirelalexy.github.io/to-do-list/index.html",
-        "icons": [{ "src": "assets/images/icon-small.png", "sizes": "192x192" }]
+        "icons": [{ "src": "assets/icons/icon-small.png", "sizes": "192x192" }]
       }
     ],
     "description": "add, check, uncheck and delete tasks on your to-do list.",
