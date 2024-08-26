@@ -16,12 +16,13 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background: #c16d32;
     background: radial-gradient(circle, #c16d32 0%, #edcda0 100%);
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .pumpkin{
@@ -37,6 +38,7 @@ body{
     max-width: 550px;
     padding: 30px;
     border-radius: 10px;
+    margin-top: 100px;
 }
 
 h1{
@@ -63,7 +65,7 @@ input{
     background-color: transparent;
 }
 
-button{
+.addTaskBtn{
     border: none;
     outline: none;
     padding: 15px 40px;
@@ -76,7 +78,7 @@ button{
     border-bottom-left-radius: 0;
 }
 
-button:hover{
+.addTaskBtn:hover{
     background-color: #c6732a;
     font-weight: bold;
 }
@@ -133,6 +135,29 @@ ul li{
 }
 
 .task-text {
-    flex-grow: 1; /* allows the text to take up available space */
-    margin-left: 10px; /* space between checkbox and text */
+    flex: 1; /* allows the text to take up available space */
+    margin-left: 10px;
+}
+
+.theme-container{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.toggleThemeBtn{
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #030202;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+.toggleThemeBtn:hover{
+    background-color: transparent;
+    color: #ffffff;
 }
